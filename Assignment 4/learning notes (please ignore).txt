@@ -1,0 +1,19 @@
+Pointers (maybe): 
+
+Since С99 the matching between format specifiers and floating-point argument types in C is consistent between printf and scanf. It is
+
+%f for float
+%lf for double
+%Lf for long double
+It just so happens that when arguments of type float are passed as variadic parameters, such arguments are implicitly converted to type double. This is the reason why in printf format specifiers %f and %lf are equivalent and interchangeable. In printf you can "cross-use" %lf with float or %f with double.
+
+But there's no reason to actually do it in practice. Don't use %f to printf arguments of type double. It is a widespread habit born back in C89/90 times, but it is a bad habit. Use %lf in printf for double and keep %f reserved for float arguments.
+
+
+
+Functions (maybe): 
+
+scanf = Scan's (listens) for user input.
+fclose = Close's the file in C.
+FILE *filenameforC = Specifies file for read/writing/etc..
+fprintf = Print's text/data to file.
