@@ -28,6 +28,16 @@ int main(void) {
     
   }
   
+  printf("Please enter footcandle: ");
+  if (scanf("%f", &f) ==1) {
+    printf("No number inputed.\n");
+  }
+  if (isalpha(1)) {
+    printf("Please enter a number.\n");
+  } else {
+    
+  }
+  
   //printf("Please enter footcandle: ");
   //scanf("%f", &f);
   
@@ -35,9 +45,17 @@ int main(void) {
   fprintf(filelux, "%f", &l);
   fclose(filelux);
   
+  printf("Footcandle entered: %f\n", 1);
+  fprintf(filefootcandle, "%f", &l);
+  fclose(filefootcandle);
+  
   float footcandle;
-  footcandle = l*2;
+  footcandle = &l / 10.764;
   printf("Footcandle = %f\n", footcandle);
+  
+  float lux;
+  lux = &f / 0.0929;
+  printf("Lux = %f\n", lux);
   
   //printf("Footcandle entered: %f\n", f);
   //fprintf(filefootcandle, "%f", &f);
