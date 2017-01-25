@@ -45,8 +45,8 @@ int main(void) {
   fprintf(filelux, "%f", &l);
   fclose(filelux);
   
-  printf("Footcandle entered: %f\n", 1);
-  fprintf(filefootcandle, "%f", &l);
+  printf("Footcandle entered: %f\n", f);
+  fprintf(filefootcandle, "%f", &f);
   fclose(filefootcandle);
   
   float footcandle;
